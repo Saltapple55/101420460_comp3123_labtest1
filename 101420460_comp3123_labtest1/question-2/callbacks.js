@@ -12,7 +12,7 @@ const success=resolvedPromise().then( function (result) {console.log(result)})
  function rejectedPromise(){
     return new Promise((res, rej)=>{
         setTimeout(()=>{
-            rej("{error: delayed exception!}")
+            rej("{error: 'delayed exception!'}")
         }, 500)
     })
 }
